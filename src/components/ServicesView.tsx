@@ -108,7 +108,7 @@ export default function ServicesView({
           DEPCO Professional Service Solutions
         </h1>
         <p className="text-slate-500 text-lg">
-          Clear, flat-rate upfront prices. Comprehensive diagnostic investigations. Master-certified mechanics. Choose a sector below to explore our core work specs.
+          Comprehensive diagnostic investigations. Master-certified mechanics. Choose a sector below to explore our core work specs.
         </p>
       </div>
 
@@ -160,11 +160,6 @@ export default function ServicesView({
                   {/* Absolute overlay icon top-left, matching the user's high-fidelity designs */}
                   <div className="absolute top-4 left-4 bg-white text-slate-800 p-2.5 rounded-xl shadow-md z-10 flex items-center justify-center border border-slate-100">
                     <IconComponent className="h-5 w-5 text-depco-blue" />
-                  </div>
-
-                  {/* Absolute pricing overlay top-right */}
-                  <div className="absolute top-4 right-4 bg-slate-900/80 backdrop-blur-xs text-white text-xs font-black tracking-wider px-3.5 py-1.5 rounded-lg z-10">
-                    {service.startingPrice}
                   </div>
                 </div>
               )}

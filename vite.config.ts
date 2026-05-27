@@ -9,7 +9,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
 
-  base: '/depco/',
+  base: './',
 
   plugins: [react(), tailwindcss()],
 

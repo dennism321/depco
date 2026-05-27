@@ -1,5 +1,6 @@
 import { Service, CityArea, Review, Booking } from '../types';
 import plumbingTileImage from '../assets/images/plumbing_under_sink_1779831440103.png';
+import drainSnakingHydrojettingImage from '../assets/images/drain_snaking_hydrojetting_1779852117788.png';
 import hvacTileImage from '../assets/images/hvac_services_heat_cooling_tile_1779831893923.png';
 import geothermalTileImage from '../assets/images/geothermal_comfort_tile_1779832137616.png';
 import hydronicTileImage from '../assets/images/hydronic_heating_system_tile_1779844828966.png';
@@ -38,7 +39,7 @@ export const SERVICES: Service[] = [
     startingPrice: '$99',
     estimateTime: '1 - 2 hours',
     guaranteeText: '30-Day Free-Clear Guarantee',
-    imageUrl: 'https://images.unsplash.com/photo-1542013936-693-8848e57423e1?auto=format&fit=crop&q=80&w=800',
+    imageUrl: drainSnakingHydrojettingImage,
     iconName: 'droplet'
   },
   {

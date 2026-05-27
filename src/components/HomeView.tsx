@@ -123,7 +123,7 @@ export default function HomeView({ setTab, setPreSelectedUrgency, setPreSelected
             </h1>
             
             <p className="text-base sm:text-lg text-slate-300 max-w-xl font-normal leading-relaxed">
-              Facing a plumbing disaster, freezing heater, or boiling AC failure? We dispatch NATE-certified master technicians equipped with flat-rate quotes and on-spot solutions. Immediate service with $0 dispatch fees on full repairs.
+              Facing a plumbing disaster, freezing heater, or boiling AC failure? We dispatch NATE-certified master technicians equipped with written quotes and on-spot solutions. Immediate service with premium dispatch responses on full repairs.
             </p>
 
             {/* Quick trust flags */}
@@ -138,7 +138,7 @@ export default function HomeView({ setTab, setPreSelectedUrgency, setPreSelected
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="h-4.5 w-4.5 text-blue-400 shrink-0" />
-                <span>Upfront Flat-Rate Quotes</span>
+                <span>Upfront Written Estimates</span>
               </div>
             </div>
 
@@ -256,7 +256,7 @@ export default function HomeView({ setTab, setPreSelectedUrgency, setPreSelected
             </div>
             <div>
               <h3 className="text-lg font-bold text-slate-900">24/7 Rapid Dispatch</h3>
-              <p className="text-slate-500 text-sm mt-1">Water leaks and freezing houses don’t wait. We stand ready 24 hours a day, 365 days a year. No extra premium emergency fees once repairs commence.</p>
+              <p className="text-slate-500 text-sm mt-1">Water leaks and freezing houses don’t wait. We stand ready 24 hours a day, 365 days a year. Rapid mobilization once dispatch begins.</p>
             </div>
           </div>
           <div className="flex gap-4 items-start border-t md:border-t-0 md:border-x border-slate-100 pt-6 md:pt-0 md:px-6">
@@ -264,8 +264,8 @@ export default function HomeView({ setTab, setPreSelectedUrgency, setPreSelected
               <ShieldCheck className="h-6 w-6" />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-slate-900">Upfront Flat-Rate Cost</h3>
-              <p className="text-slate-500 text-sm mt-1">We price by the job, not by the hour. You always receive a concrete, written quote before we turn a single wrench. Absolute integrity.</p>
+              <h3 className="text-lg font-bold text-slate-900">Upfront Estimates</h3>
+              <p className="text-slate-500 text-sm mt-1">We detail the assessment clearly. You always receive a concrete, written explanation before we begin any work. Absolute integrity.</p>
             </div>
           </div>
           <div className="flex gap-4 items-start border-t md:border-t-0 pt-6 md:pt-0">
@@ -273,7 +273,7 @@ export default function HomeView({ setTab, setPreSelectedUrgency, setPreSelected
               <Heart className="h-6 w-6" />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-slate-900">Clinton Family Guarantee</h3>
+              <h3 className="text-lg font-bold text-slate-900">Plainville Family Guarantee</h3>
               <p className="text-slate-500 text-sm mt-1">All of our plumbers and technicians undergo screening and extensive safety training. Every repair carries our standard 1-Year satisfaction warranty.</p>
             </div>
           </div>
@@ -350,7 +350,7 @@ export default function HomeView({ setTab, setPreSelectedUrgency, setPreSelected
               serviceId: 'plumb-leak',
               imageUrl: plumbingTileImage,
               snippet: 'Repairs, installations and remodels for faucets, fixtures, water lines and full plumbing systems — residential and commercial.',
-              price: 'from $85'
+              badge: 'Emergency Care'
             },
             {
               id: 'tankless',
@@ -358,8 +358,8 @@ export default function HomeView({ setTab, setPreSelectedUrgency, setPreSelected
               icon: Droplets,
               serviceId: 'plumb-heater',
               imageUrl: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800',
-              snippet: 'Tank and tankless water heater installation, replacement and repair. Save up to 50% on your water heating bill.',
-              price: 'from $189'
+              snippet: 'Tank and tankless water heater installation, replacement and repair. Professional system optimization.',
+              badge: 'Energy Saver'
             },
             {
               id: 'heating',
@@ -368,7 +368,7 @@ export default function HomeView({ setTab, setPreSelectedUrgency, setPreSelected
               serviceId: 'heat-furnace-rep',
               imageUrl: hvacTileImage,
               snippet: 'Furnaces, boilers, heat pumps and central air. Installation, maintenance and emergency repair from licensed CT technicians.',
-              price: 'from $89'
+              badge: '24/7 Service'
             },
             {
               id: 'geothermal',
@@ -376,8 +376,8 @@ export default function HomeView({ setTab, setPreSelectedUrgency, setPreSelected
               icon: Snowflake,
               serviceId: 'heat-boilers',
               imageUrl: geothermalTileImage,
-              snippet: 'IGSHPA-certified geothermal installation. Cut energy consumption 20–50% with green, renewable heating and cooling.',
-              price: 'from $249'
+              snippet: 'IGSHPA-certified geothermal installation. Support eco-friendly solutions with green, renewable heating and cooling.',
+              badge: 'Renewable Tech'
             },
             {
               id: 'hydronic',
@@ -385,8 +385,8 @@ export default function HomeView({ setTab, setPreSelectedUrgency, setPreSelected
               icon: Flame,
               serviceId: 'heat-hydronic',
               imageUrl: hydronicTileImage,
-              snippet: 'Radiant floor and high-efficiency hydronic systems engineered for comfort, quiet operation and lower fuel bills.',
-              price: 'from $199'
+              snippet: 'Radiant floor and high-efficiency hydronic systems engineered for comfort, quiet operation and lower energy draw.',
+              badge: 'Ultimate Comfort'
             },
             {
               id: 'electrical',
@@ -395,7 +395,7 @@ export default function HomeView({ setTab, setPreSelectedUrgency, setPreSelected
               serviceId: 'elec-general',
               imageUrl: electricalTileImage,
               snippet: 'Licensed electrical contracting — panels, wiring, generators and service upgrades for your home or business.',
-              price: 'from $119'
+              badge: 'Licensed & Certified'
             }
           ].map((cat) => {
             const Icon = cat.icon;
@@ -415,11 +415,11 @@ export default function HomeView({ setTab, setPreSelectedUrgency, setPreSelected
                   />
                   {/* Absolute overlay icon top-left */}
                   <div className="absolute top-4 left-4 bg-white text-slate-800 p-2.5 rounded-xl shadow-md z-10 flex items-center justify-center border border-slate-100">
-                    <Icon className="h-5 w-5 text-depco-blue" />
+                     <Icon className="h-5 w-5 text-depco-blue" />
                   </div>
-                  {/* Price pill top-right */}
+                  {/* Badge pill top-right */}
                   <div className="absolute top-4 right-4 bg-slate-900/80 backdrop-blur-xs text-white text-[10px] font-bold px-2.5 py-1 rounded">
-                    {cat.price}
+                    {cat.badge}
                   </div>
                 </div>
 
@@ -447,7 +447,7 @@ export default function HomeView({ setTab, setPreSelectedUrgency, setPreSelected
                     >
                       Request service <ChevronRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                     </button>
-                    <span className="text-[10px] text-slate-400 font-semibold">{cat.price}</span>
+                    <span className="text-[10px] text-slate-400 font-semibold">{cat.badge}</span>
                   </div>
                 </div>
               </div>
@@ -467,7 +467,7 @@ export default function HomeView({ setTab, setPreSelectedUrgency, setPreSelected
           </div>
           
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">
-            Comprehensive $59 Heating & A/C Efficiency Sweep
+            Comprehensive Heating & A/C Efficiency Sweep
           </h2>
           
           <p className="text-slate-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">

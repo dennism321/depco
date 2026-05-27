@@ -284,7 +284,7 @@ export default function DispatchCenterView({
                 >
                   {SERVICES.map((s) => (
                     <option key={s.id} value={s.id}>
-                      [{s.category.toUpperCase()}] {s.name} (starting {s.startingPrice})
+                      [{s.category.toUpperCase()}] {s.name}
                     </option>
                   ))}
                 </select>

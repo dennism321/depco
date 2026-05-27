@@ -111,7 +111,7 @@ export default function Footer({ setTab }: FooterProps) {
               ❄️ <span className="text-white font-medium">NATE HVAC Core Specialist ID:</span> NATE-3329104
             </p>
             <p className="text-slate-400 italic">
-              "We guarantee to solve your local emergency upfront, flat-rate, and with zero pricing bait-and-switch. That is our Plainville promise."
+              "We guarantee to solve your local emergency with precision, expertise, and absolute integrity. That is our Plainville promise."
             </p>
           </div>
 
