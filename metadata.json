@@ -1,0 +1,8 @@
+{
+  "name": "DEPCO Comfort Solutions",
+  "description": "24/7 Professional Emergency Plumbing, Heating, Cooling & Indoor Air Quality Services",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
